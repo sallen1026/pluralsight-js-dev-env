@@ -9,8 +9,13 @@ describe('Our first test', () => {
 });
 
 describe('index.html', () => {
-    it('should say hello', () => {
-        const index = fs.readFileSybc('./src/index.html', "utf-8");
-        jsdom.env(index,)
+    it('should say hello', (done) => {                                  // "it" takes a parameter that tells it when the asynchronous call is "done"
+        const index = fs.readFileSync('./src/index.html', "utf-8");
+        jsdom.env(index, function(err, window){                         // this is an asynchronous callback function, so you have to tell it when it's done
+            const h1 = window.document.getElementsByTagName('h1')[0];
+            expect(h1.innerHTML).to.equal("Hello World!");
+            done();                                                     // this tells Mocha that our test is "done", and it will then run the expect to say whether it's true or false
+            window.close();
+        });
     })
 })

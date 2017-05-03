@@ -9,7 +9,7 @@ describe('Our first test', () => {
 });
 
 describe('index.html', () => {
-    it('should have h1 that says Users', (done) => {                                  // "it" takes a parameter that tells it when the asynchronous call is "done"
+    it('should have h1 that says Users', (done) => {                    // "it" takes a parameter that tells it when the asynchronous call is "done"
         const index = fs.readFileSync('./src/index.html', "utf-8");
         jsdom.env(index, function(err, window){                         // this is an asynchronous callback function, so you have to tell it when it's done
             const h1 = window.document.getElementsByTagName('h1')[0];

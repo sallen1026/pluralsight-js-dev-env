@@ -1,0 +1,23 @@
+{
+    "users": [{
+        "id": 26211717,
+        "firstName": "Brendan",
+        "lastName": "Eichmann",
+        "email": "Gwendolyn43@gmail.com"
+    }, {
+        "id": 17076705,
+        "firstName": "Kamron",
+        "lastName": "Heaney",
+        "email": "Aniyah.Larkin32@hotmail.com"
+    }, {
+        "id": 42216910,
+        "firstName": "Brown",
+        "lastName": "Waters",
+        "email": "Sid45@hotmail.com"
+    }, {
+        "id": 8333694,
+        "firstName": "Alex",
+        "lastName": "Kunze",
+        "email": "Tony33@hotmail.com"
+    }]
+}

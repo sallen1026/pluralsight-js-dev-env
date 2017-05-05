@@ -1,5 +1,5 @@
 import path from 'path';
-import webpack from 'webpack';
+import webpack from 'webpack';  // we need to add this import since we're now calling some webpack specific features
 
 export default {
   debug: true,

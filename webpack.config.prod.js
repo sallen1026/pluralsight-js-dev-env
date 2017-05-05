@@ -3,7 +3,8 @@ import webpack from 'webpack';
 
 export default {
   debug: true,
-  // for  Prod, we changed from inline-source-map to source-map to get the most info; it's slower to build, but worth it
+  // for  Prod, we changed from inline-source-map to source-map to get the most info; it's slower to build,
+  // but provides the highest quality source-map experience
   devtool: 'source-map',
   noInfo: false,
   entry: [

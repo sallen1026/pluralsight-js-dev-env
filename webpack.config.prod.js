@@ -23,7 +23,7 @@ export default {
       new HtmlWebpackPlugin({
           template: 'src/index.html',
           inject: true
-      })
+      }),
       // Eliminate duplicate packages when generating bundle
       new webpack.optimize.DedupePlugin(),
       // Minify JS

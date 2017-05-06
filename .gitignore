@@ -38,3 +38,5 @@ jspm_packages
 
 # node security check contains pswd
 .nsprc
+
+src/api/db.json

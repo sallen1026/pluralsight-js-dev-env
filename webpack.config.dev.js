@@ -1,5 +1,4 @@
 import path from 'path';
-import webpack from 'webpack';  // we need to add this import since we're now calling some webpack specific features
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {

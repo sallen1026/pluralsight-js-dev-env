@@ -40,4 +40,4 @@ jspm_packages
 .nsprc
 
 src/api/db.json
-dist/index.html
+dist
